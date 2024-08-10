@@ -57,7 +57,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            I'm a software engineer and I love to build things.
+            I&apos;m a software engineer and I love to build things.
           </p>
           <div>
             <button
