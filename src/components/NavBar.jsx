@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -30,20 +31,25 @@ const NavBar = () => {
           href={"/"}
           className="text-white text-3xl md:text-5xl font-semibold"
         >
-          LOGO
+          <Image
+            src={"/images/portfolio-logo.png"}
+            alt="logo"
+            width={100}
+            height={100}
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-customGreen-300 hover:border-customGreen-300"
             >
               <XMarkIcon className="h-5 w-5"></XMarkIcon>
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-customGreen-300 hover:border-customGreen-300"
             >
               <Bars3Icon className="h-5 w-5"></Bars3Icon>
             </button>

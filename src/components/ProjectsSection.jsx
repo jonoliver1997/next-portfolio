@@ -3,62 +3,69 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import { Press_Start_2P } from "next/font/google";
+
+const press_start_2p = Press_Start_2P({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 const projectsData = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Description 1",
-    image: "https://via.placeholder.com/300",
+    title: "QuizPal",
+    description: "Flashcard Quizzing Webapp",
+    image: "/images/projects/quizpal_preview.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com",
+    gitUrl: "https://github.com/jonoliver1997/QuizPal",
+    previewUrl: "https://quizpal.netlify.app",
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "Description 2",
-    image: "https://via.placeholder.com/300",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com",
+    title: "Summize",
+    description: "AI Article Summarizer",
+    image: "/images/projects/summize_preview.png",
+    tag: ["All", "Web", "Next.js"],
+    gitUrl: "https://github.com/jonoliver1997/ai_summarizer",
+    previewUrl: "https://jonoliveraisummize.netlify.app",
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "Description 3",
-    image: "https://via.placeholder.com/300",
+    title: "Ripple",
+    description: "Real-time Chat Application",
+    image: "/images/projects/ripple_preview.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com",
+    gitUrl: "https://github.com/Algorithm-Allies/chatApp",
+    previewUrl: "https://ripple-production.vercel.app",
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "Description 4",
-    image: "https://via.placeholder.com/300",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com",
+    title: "Mystical Bookshelf",
+    description: "Mock Bookstore Webapp with in app AI Chatbot",
+    image: "/images/projects/mystical-books_preview.png",
+    tag: ["All", "Web", "Next.js"],
+    gitUrl: "https://github.com/jonoliver1997/mystical-bookshelf-ai-chatbot",
+    previewUrl: "https://mystical-bookshelf-ai-chatbot.vercel.app",
   },
-  {
-    id: 5,
-    title: "Project 5",
-    description: "Description 5",
-    image: "https://via.placeholder.com/300",
-    tag: ["All", "Javascript"],
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com",
-  },
-  {
-    id: 6,
-    title: "Project 6",
-    description: "Description 6",
-    image: "https://via.placeholder.com/300",
-    tag: ["All", "Next.js"],
-    gitUrl: "https://github.com",
-    previewUrl: "https://github.com",
-  },
+  // {
+  //   id: 5,
+  //   title: "Project 5",
+  //   description: "Description 5",
+  //   image: "https://via.placeholder.com/300",
+  //   tag: ["All", "Javascript"],
+  //   gitUrl: "https://github.com",
+  //   previewUrl: "https://github.com",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Project 6",
+  //   description: "Description 6",
+  //   image: "https://via.placeholder.com/300",
+  //   tag: ["All", "Next.js"],
+  //   gitUrl: "https://github.com",
+  //   previewUrl: "https://github.com",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -81,7 +88,9 @@ const ProjectsSection = () => {
 
   return (
     <section ref={ref} className="lg:py-16">
-      <h2 className="text-center text-4xl font-bold text-white">
+      <h2
+        className={`text-center text-4xl font-bold ${press_start_2p.className} text-transparent bg-clip-text bg-gradient-to-r from-customGreen-400 to bg-customGreen-100`}
+      >
         Project Highlights
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
