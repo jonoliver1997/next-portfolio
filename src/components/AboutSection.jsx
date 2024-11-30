@@ -93,13 +93,14 @@ const AboutSection = () => {
                 About Me
               </h2>
               <p className="text-base md:text-lg text-gray-300 mx-2">
-                I'm Jonathan Oliver, a software engineer from California with a
-                passion for creating meaningful, user-centered applications.
-                With a strong foundation in full-stack development, I specialize
-                in building responsive and scalable web and mobile applications.
-                I have hands-on experience designing intuitive user interfaces
-                and developing efficient backend solutions using technologies
-                like React, Node.js, and MongoDB.
+                I&apos;m Jonathan Oliver, a software engineer from California
+                with a passion for creating meaningful, user-centered
+                applications. With a strong foundation in full-stack
+                development, I specialize in building responsive and scalable
+                web and mobile applications. I have hands-on experience
+                designing intuitive user interfaces and developing efficient
+                backend solutions using technologies like React, Node.js, and
+                MongoDB.
                 <br />
                 <br />
                 Beyond my technical skills, I am driven by a belief that
@@ -108,8 +109,8 @@ const AboutSection = () => {
                 marginalized communities. I enjoy collaborating with others to
                 solve complex problems and build innovative digital experiences
                 that can make a positive impact. Whether working in a team or on
-                my own, I’m always looking for ways to leverage my skills to
-                contribute to projects that drive change.
+                my own, I&apos;m always looking for ways to leverage my skills
+                to contribute to projects that drive change.
               </p>
             </div>
           </div>
