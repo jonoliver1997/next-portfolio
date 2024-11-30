@@ -77,7 +77,7 @@ const AboutSection = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center lg:items-start justify-center lg:justify-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="space-y-4">
           <Image
-            src="/images/about/waterfall.jpg"
+            src="/images/waterfall.jpg"
             width={500}
             height={500}
             alt="Jonathan Oliver"
