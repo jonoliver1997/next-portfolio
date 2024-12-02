@@ -24,8 +24,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="lg:py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+    <section className="lg:py-16 lg:mt-10 mt-24 flex flex-col items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-12 justify-between w-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ const HeroSection = () => {
             Hello, I&apos;m <br />
           </h1>
           <h1
-            className={`text-white mb-4 mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold ${press_start_2p.className} overflow-hidden whitespace-nowrap`}
+            className={`text-white mb-4 mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold ${press_start_2p.className} overflow-clip leading-none`}
           >
             <TypeAnimation
               sequence={[
@@ -59,22 +59,6 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
             I&apos;m a software engineer and I love to build things.
           </p>
-          <div>
-            <button
-              onClick={handleClickHire}
-              className="bg-gradient-to-br from-customGreen-500 via-customGreen-300 to-customGreen-100 text-white px-6 py-3 rounded-full mr-4 w-full sm:w-fit hover:text-slate-800 "
-            >
-              Hire Me
-            </button>
-            <button
-              onClick={handleClickResume}
-              className="bg-gradient-to-br from-customGreen-500 via-customGreen-300 to-customGreen-100 hover:bg-slate-800 text-white px-1 py-1 rounded-full mr-4 w-full sm:w-fit mt-4"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                View Resume
-              </span>
-            </button>
-          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -92,6 +76,22 @@ const HeroSection = () => {
             />
           </div>
         </motion.div>
+      </div>
+      <div className="mt-8 mb-8">
+        <button
+          onClick={handleClickHire}
+          className="bg-gradient-to-br from-customGreen-500 via-customGreen-300 to-customGreen-100 text-white px-6 py-3 rounded-full mr-4 w-full sm:w-fit hover:text-slate-800 "
+        >
+          Hire Me
+        </button>
+        <button
+          onClick={handleClickResume}
+          className="bg-gradient-to-br from-customGreen-500 via-customGreen-300 to-customGreen-100 hover:bg-slate-800 text-white px-1 py-1 rounded-full mr-4 w-full sm:w-fit mt-4"
+        >
+          <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+            View Resume
+          </span>
+        </button>
       </div>
     </section>
   );

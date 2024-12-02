@@ -99,8 +99,8 @@ const AboutSection = () => {
                 development, I specialize in building responsive and scalable
                 web and mobile applications. I have hands-on experience
                 designing intuitive user interfaces and developing efficient
-                backend solutions using technologies like React, Node.js, and
-                MongoDB.
+                backend solutions using technologies like Next.js, React Native,
+                and Node.
                 <br />
                 <br />
                 Beyond my technical skills, I am driven by a belief that

@@ -42,7 +42,7 @@ const projectsData = [
   {
     id: 4,
     title: "Mystical Bookshelf",
-    description: "Mock Bookstore Webapp with in app AI Chatbot",
+    description: "Mock Bookstore Webapp with in an AI Chatbot",
     image: "/images/projects/mystical-books_preview.png",
     tag: ["All", "Web", "Next.js"],
     gitUrl: "https://github.com/jonoliver1997/mystical-bookshelf-ai-chatbot",
@@ -87,7 +87,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section ref={ref} className="lg:py-16">
+    <section ref={ref} className="lg:py-16 mt-24">
       <h2
         className={`text-center text-4xl font-bold ${press_start_2p.className} text-transparent bg-clip-text bg-gradient-to-r from-customGreen-400 to bg-customGreen-100`}
       >
